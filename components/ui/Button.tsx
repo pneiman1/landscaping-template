@@ -11,6 +11,7 @@ interface ButtonProps {
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
+  style?: React.CSSProperties;
 }
 
 export function Button({
@@ -22,6 +23,7 @@ export function Button({
   onClick,
   type = "button",
   disabled = false,
+  style,
 }: ButtonProps) {
   const baseStyles =
     "font-semibold rounded-lg transition-all duration-300 inline-flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed";
@@ -58,6 +60,7 @@ export function Button({
       onClick={onClick}
       disabled={disabled}
       className={cn(baseStyles, variants[variant], sizes[size], className)}
+      style={style}
       whileHover={!disabled ? { scale: 1.05 } : {}}
       whileTap={!disabled ? { scale: 0.98 } : {}}
     >
