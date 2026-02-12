@@ -1,0 +1,106 @@
+export const siteConfig = {
+  business: {
+    name: "Neiman Landscaping",
+    tagline: "Premium Landscaping Services",
+    description: "Experience premium landscaping services in San Diego. Expert design, professional maintenance, and beautiful outdoor spaces for your home or business.",
+    address: {
+      street: "4600 Lamont St",
+      city: "San Diego",
+      state: "CA",
+      zip: "92109",
+      country: "United States",
+    },
+    phone: "(000) 123-4567",
+    email: "info@neimanlandscaping.com",
+    hours: {
+      monday: "9:00 AM - 7:00 PM",
+      tuesday: "9:00 AM - 7:00 PM",
+      wednesday: "9:00 AM - 7:00 PM",
+      thursday: "9:00 AM - 7:00 PM",
+      friday: "9:00 AM - 7:00 PM",
+      saturday: "9:00 AM - 6:00 PM",
+      sunday: "10:00 AM - 5:00 PM",
+    },
+    rating: {
+      value: 4.5,
+      count: 80,
+    },
+    coordinates: {
+      latitude: 32.7974,
+      longitude: -117.2356,
+    },
+  },
+  domain: "neimanlandscaping.com",
+  url: "https://neimanlandscaping.com",
+  booksy: {
+    url: "https://neimanlandscaping.com/contact",
+    widgetId: "",
+  },
+  services: [
+    {
+      id: "lawn-maintenance",
+      name: "Lawn Maintenance",
+      description: "Regular mowing, edging, and trimming to keep your lawn looking pristine year-round.",
+      price: "$80",
+      duration: "Weekly",
+      popular: true,
+    },
+    {
+      id: "landscape-design",
+      name: "Landscape Design",
+      description: "Custom landscape design tailored to your property, style preferences, and budget.",
+      price: "$500+",
+      duration: "Project",
+      popular: true,
+    },
+    {
+      id: "tree-shrub-care",
+      name: "Tree & Shrub Care",
+      description: "Professional pruning, trimming, and maintenance to keep trees and shrubs healthy.",
+      price: "$150",
+      duration: "Per Visit",
+      popular: false,
+    },
+    {
+      id: "irrigation",
+      name: "Irrigation Systems",
+      description: "Installation and repair of efficient irrigation systems to keep your landscape thriving.",
+      price: "$1,200+",
+      duration: "Project",
+      popular: true,
+    },
+    {
+      id: "hardscaping",
+      name: "Hardscaping",
+      description: "Patios, walkways, retaining walls, and outdoor living spaces built to last.",
+      price: "$2,000+",
+      duration: "Project",
+      popular: false,
+    },
+    {
+      id: "seasonal-cleanup",
+      name: "Seasonal Cleanup",
+      description: "Spring and fall cleanup services including debris removal, mulching, and bed preparation.",
+      price: "$200",
+      duration: "Per Visit",
+      popular: false,
+    },
+  ],
+  social: {
+    instagram: "",
+    facebook: "",
+    yelp: "",
+  },
+  seo: {
+    keywords: [
+      "landscaping san diego",
+      "lawn care san diego",
+      "landscape design",
+      "tree trimming",
+      "irrigation systems",
+      "hardscaping san diego",
+    ],
+  },
+};
+
+export type SiteConfig = typeof siteConfig;
